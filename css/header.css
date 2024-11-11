@@ -36,3 +36,23 @@ body {
   font-weight: 500;
   margin: 10px;
 }
+
+.icon__arrow {
+  display: none;
+}
+
+@media (max-width: 391px) {
+  .icon__arrow {
+    display: block;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__information a {
+    font-size: 14px;
+  }
+}
