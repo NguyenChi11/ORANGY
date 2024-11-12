@@ -1,6 +1,3 @@
-import Splide from "@splidejs/splide";
-import "@splidejs/splide/css";
-
 // header
 const phone = document.querySelector(".header__phone");
 const address = document.querySelector(".header__address");
