@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.product__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px -88px;
+}
+
+.product__menu-left h1 {
+  font-size: 36px;
+  font-family: "Lora";
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.product__menu-right {
+  display: flex;
+  gap: 30px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  align-items: center;
+}
+
+.product__menu--title {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.product__menu--title.under--action {
+  border-bottom: 2px solid black;
+}
+
+.product__gird--list {
+  display: flex;
+  justify-content: center;
+}
+
+.product__gird {
+  max-width: 1410px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.productions__left--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.productions__right--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.product__image {
+  max-height: 460px;
+}
+
+.category {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.product--name,
+.product--price {
+  font-size: 16px;
+}
+
+.product--name {
+  font-weight: 500;
+}
+
+.product--price {
+  font-weight: 400;
+}
+
+@media (max-width: 391px) {
+  .product__title {
+    display: grid;
+  }
+
+  .product__menu-left h1 {
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .product__menu-right {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 20px;
+  }
+
+  .product__menu--title:last-child {
+    display: none;
+  }
+
+  .product__gird {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+  }
+
+  .product__image {
+    max-height: 235px;
+  }
+}
