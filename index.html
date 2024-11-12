@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/product.css">
   </head>
   <body>
     <!-- phần header số điện thoại và địa chỉ email -->
@@ -24,14 +25,14 @@
     <body>
       <header>
         <div class="header__information">
-          <div class="icon__arrow arrow__left"><i class="fa-solid fa-angle-left"></i></div>
-          <div class="header__phone">
+          <div class="icon__arrow arrow__left" ><i class="fa-solid fa-angle-left"></i></div>
+          <div class="header__phone turn__off">
             <a href="tel:+84123456789">(+84) 12 34 5678</a>
           </div>
-          <div class="header__address">
+          <div class="header__address ">
             <a href=""> 78 Trung Kinh, Yen Hoa, Cau Giay, HaNoi</a>
           </div>
-          <div class="icon__arrow arrow_right"><i class="fa-solid fa-angle-right"></i></div>
+          <div class="icon__arrow arrow_right" ><i class="fa-solid fa-angle-right"></i></div>
         </div>
         <div class="header__logo">ORANGY</div>
       </header>
@@ -41,13 +42,75 @@
         <h1>EMBRACE VISION</h1>
         <h4>Clever products for every corne</h4>
         <p>explore now
+          <hr>
         </p>
-        <hr>
       </div>
      </div>
 
      <!-- phần product -->
+      <div class="product__title">
+        <div class="product__menu-left"><h1>         
+          Our picks for you
+        </h1>
+      </div>
+        <div class="product__menu-right">
+          <span class="product__menu--title"  onclick="selectItem(this)">SEATING</span>
+          <span class="product__menu--title"  onclick="selectItem(this)">TABLE </span>
+          <span class="product__menu--title"  onclick="selectItem(this)">STORAGE </span>
+          <span class="product__menu--title"  onclick="selectItem(this)">LIGHTING </span>
+          <span class="product__menu--title"  onclick="selectItem(this)">DECOR </span>
+        </div>
+      </div>
+      <!-- product gird -->
+       <div class="product__gird--list">
+         <div class="product__gird">
+         <div class="productions__left--list">
+            <div class="productions">
+              <img class="product__image" src="./images/product_1.jpg" alt="">
+              <div class="category">SOFA</div>
+              <div class="product--name">Oda ottoman</div>
+              <div class="product--price"> $699.00</div>
+            </div>
+          </div>
+          <div class="productions__right--list">
+            <div class="productions">
+              <img class="product__image" src="./images/product_2.jpg" alt="">
+              <div class="category">DINING CHAR</div>
+              <div class="product--name">Ready dining chair</div>
+              <div class="product--price"> $699.00</div>
+            </div>
+            <div class="productions">
+              <img class="product__image" src="./images/product_3.jpg" alt="">
+              <div class="category">DINING CHAR</div>
+              <div class="product--name">Ready dining chair</div>
+              <div class="product--price"> $699.00</div>
+            </div>
+          </div>
+          <div class="productions__left--list">
+            <div class="productions">
+              <img class="product__image" src="./images/product_4.jpg" alt="">
+              <div class="category">SOFA</div>
+              <div class="product--name">Oda ottoman</div>
+              <div class="product--price"> $699.00</div>
+            </div>
+            <div class="productions">
+              <img class="product__image" src="./images/product_5.jpg" alt="">
+              <div class="category">SOFA</div>
+              <div class="product--name">Oda ottoman</div>
+              <div class="product--price"> $699.00</div>
+            </div>
+          </div>
+          <div class="productions__right--list">
+            <div class="productions">
+              <img class="product__image" src="./images/product_6.jpg" alt="">
+              <div class="category">DINING CHAR</div>
+              <div class="product--name">Ready dining chair</div>
+              <div class="product--price"> $699.00</div>
+            </div>
+          </div>
+         </div>
+       </div>
      
   </body>
-  <script type="module" src="./js/app.js"></script>
+  <script src="./js/app.js"></script>
 </html>

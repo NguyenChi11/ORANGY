@@ -41,6 +41,13 @@ body {
   display: none;
 }
 
+.active {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
 @media (max-width: 391px) {
   .icon__arrow {
     display: block;
@@ -49,8 +56,11 @@ body {
     align-items: center;
     margin: 10px;
   }
-  .header__phone {
+  .turn__off {
     display: none;
+  }
+  .turn__on {
+    display: block;
   }
   .header__information a {
     font-size: 14px;

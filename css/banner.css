@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .banner .banner__content {
@@ -41,9 +42,6 @@
   font-weight: 400;
   color: #ffffff;
   margin: 10px;
-}
-
-.banner .banner__content hr {
 }
 
 @media (max-width: 391px) {
