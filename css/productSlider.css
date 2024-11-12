@@ -1,0 +1,37 @@
+.product__title--slider {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.product__title--slider {
+  font-family: "Lora";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.product--image {
+  max-height: 460px;
+}
+
+.product__slider--list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 391px) {
+  .product__title--slider {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38.4px;
+  }
+  .product--image {
+    max-height: 350px;
+  }
+}
