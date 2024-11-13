@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
@@ -16,6 +17,10 @@
     <link rel="stylesheet" href="./css/productSlider.css">
     <link rel="stylesheet" href="./css/textCarousel.css">
     <link rel="stylesheet" href="./css/saleBlcok.css">
+    <link rel="stylesheet" href="./css/inspiration.css">
+    <link rel="stylesheet" href="./css/singleBanner.css">
+    <link rel="stylesheet" href="./css/contac.css">
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
   <body>
     <!-- phần header số điện thoại và địa chỉ email -->
@@ -46,7 +51,7 @@
         <h1>EMBRACE VISION</h1>
         <h4>Clever products for every corne</h4>
         <p>explore now
-          <hr>
+        <hr/>
         </p>
       </div>
      </div>
@@ -58,94 +63,36 @@
         </h1>
       </div>
         <div class="product__menu-right">
-          <span class="product__menu--title"  onclick="selectItem(this)">SEATING</span>
-          <span class="product__menu--title"  onclick="selectItem(this)">TABLE </span>
-          <span class="product__menu--title"  onclick="selectItem(this)">STORAGE </span>
-          <span class="product__menu--title"  onclick="selectItem(this)">LIGHTING </span>
-          <span class="product__menu--title"  onclick="selectItem(this)">DECOR </span>
+          <span class="product__menu--title"  data-category="seating" onclick="selectItem(this)"  >SEATING</span>
+          <span class="product__menu--title" data-category="table"onclick="selectItem(this)">TABLE </span>
+          <span class="product__menu--title" data-category="storage"onclick="selectItem(this)" >STORAGE </span>
+          <span class="product__menu--title" data-category="lighting"onclick="selectItem(this)" >LIGHTING </span>
+          <span class="product__menu--title" data-category="decor"onclick="selectItem(this)"  >DECOR </span>
         </div>
       </div>
-      <!-- product gird -->
+      <!-- product gird  -->
+       <!-- CSS lại -->
        <div class="product__gird--list">
-         <div class="product__gird">
-         <div class="productions__left--list">
-            <div class="productions">
-              <img class="product__image" src="./images/product_1.jpg" alt="">
-              <div class="category">SOFA</div>
-              <div class="product--name">Oda ottoman</div>
-              <div class="product--price"> $699.00</div>
-            </div>
-          </div>
-          <div class="productions__right--list">
-            <div class="productions">
-              <img class="product__image" src="./images/product_2.jpg" alt="">
-              <div class="category">DINING CHAR</div>
-              <div class="product--name">Ready dining chair</div>
-              <div class="product--price"> $699.00</div>
-            </div>
-            <div class="productions">
-              <img class="product__image" src="./images/product_3.jpg" alt="">
-              <div class="category">DINING CHAR</div>
-              <div class="product--name">Ready dining chair</div>
-              <div class="product--price"> $699.00</div>
-            </div>
-          </div>
-          <div class="productions__left--list">
-            <div class="productions">
-              <img class="product__image" src="./images/product_4.jpg" alt="">
-              <div class="category">SOFA</div>
-              <div class="product--name">Oda ottoman</div>
-              <div class="product--price"> $699.00</div>
-            </div>
-            <div class="productions">
-              <img class="product__image" src="./images/product_5.jpg" alt="">
-              <div class="category">SOFA</div>
-              <div class="product--name">Oda ottoman</div>
-              <div class="product--price"> $699.00</div>
-            </div>
-          </div>
-          <div class="productions__right--list">
-            <div class="productions">
-              <img class="product__image" src="./images/product_6.jpg" alt="">
-              <div class="category">DINING CHAR</div>
-              <div class="product--name">Ready dining chair</div>
-              <div class="product--price"> $699.00</div>
-            </div>
-          </div>
+         <div id="product__container" class="product__gird">
          </div>
        </div>
      <!-- product slider -->
-       <div class="product__title--slider">
-        <h1>Discover unique items</h1>
-       </div>
-       <div class="product__slider--list">
-        <div class="product__slider">
-          <img class="product--image" src="./images/product_5.jpg" alt="">
-          <div class="category">SOFA</div>
-          <div class="product--name">Oda ottoman</div>
-          <div class="product--price"> $699.00</div>
-        </div>
-        <div class="product__slider">
-          <img class="product--image" src="./images/product_5.jpg" alt="">
-          <div class="category">SOFA</div>
-          <div class="product--name">Oda ottoman</div>
-          <div class="product--price"> $699.00</div>
-        </div>
-        <div class="product__slider">
-          <img class="product--image" src="./images/product_5.jpg" alt="">
-          <div class="category">SOFA</div>
-          <div class="product--name">Oda ottoman</div>
-          <div class="product--price"> $699.00</div>
-        </div>
-        <div class="product__slider">
-          <img class="product--image" src="./images/product_5.jpg" alt="">
-          <div class="category">SOFA</div>
-          <div class="product--name">Oda ottoman</div>
-          <div class="product--price"> $699.00</div>
-        </div>
-       </div>
-       <!-- Text Carousel -->
 
+        <div class="slider__title">
+         <h1>Discover unique items</h1>
+        </div>
+      <div class="slider">
+        <div class="slider__list ">
+          <div class="splide visibility" role="group" aria-label="Splide Basic HTML Example">
+           <div class="splide__track">
+             <ul id="splide__list" class="splide__list">
+            
+             </ul>
+           </div>
+         </div>
+        </div>
+      </div>
+       <!-- Text Carousel -->
       <div class="marquee-container">
         <span class="marquee-text">FIND INSPRATION * DESIGN FOR LIVING * UNIQUE FURNITURE</span>
       </div>
@@ -169,7 +116,121 @@
           <img src="./images/product_2.jpg" alt="">
         </div>
       </div>
+      <!-- Inspiration -->
+       <div class="inspiration">
+        <div class="inspiration__title">
+          <h2>Change the look of your house,
+            change the perspective of others</h2>
+        </div>
+        <div class="inspiration__full">
+
+          <div id="scrollContainer" class="inspiration__body">
+              <div class="inspiration__item">
+                <img class="inspiration__image " src="./images/items_1.png" alt="">
+                <h3>Interior work</h3>
+                <p>Crafting spaces through meticulous planning, material selection, and creative execution, enhancing aesthetics and functionality.</p>
+              </div>
+              <div class="inspiration__item">
+                <img class="inspiration__image " src="./images/items_2.png" alt="">
+                <h3>Interior work</h3>
+                <p>Crafting spaces through meticulous planning, material selection, and creative execution, enhancing aesthetics and functionality.</p>
+              </div>
+              <div class="inspiration__item">
+                <img class="inspiration__image " src="./images/items_1.png" alt="">
+                <h3>Interior work</h3>
+                <p>Crafting spaces through meticulous planning, material selection, and creative execution, enhancing aesthetics and functionality.</p>
+              </div>
+              <div class="inspiration__item">
+                <img class="inspiration__image " src="./images/items_2.png" alt="">
+                <h3>Interior work</h3>
+                <p>Crafting spaces through meticulous planning, material selection, and creative execution, enhancing aesthetics and functionality.</p>
+              </div>
+            </div>
+        </div>
+       </div>
+       <!-- single banner -->
+        <div class="single__banner">
+          <div class="single__text">
+            <h2>Elevate Your Home</h2>
+            <p>Clever products for every corner</p>
+          </div>
+        </div>
+        <!-- over service -->
+         <div class="icon__list">
+          <div class="icon__item">
+            <img src="./images/icon_1.png" alt="">
+            <div class="icon__title">
+              <h4>Free & fast delivery</h4>
+              <p>We offer free shipping with ground delivery to the lower 48 states.</p>
+            </div>
+          </div>
+          <div class="icon__item">
+            <img src="./images/icon_2.png" alt="">
+            <div class="icon__title">
+              <h4>Online support</h4>
+              <p>Online Support24 hours a day,
+                7 days a week</p>
+            </div>
+          </div>
+          <div class="icon__item">
+            <img src="./images/icon_3.png" alt="">
+            <div class="icon__title">
+              <h4>30 Days return</h4>
+              <p>Exchange or return items free of charge within 30 days.</p>
+            </div>
+          </div>
+          <div class="icon__item">
+            <img src="./images/icon_4.png" alt="">
+            <div class="icon__title">
+              <h4>Flexible payment</h4>
+              <p>Pay conveniently using multiple credit cards for added flexibility.</p>
+            </div>
+          </div>
+         </div>
+
+         <!-- contact shop -->
+          <div class="contact">
+            <div class="contact__left">
+              <img class="image__contact_1" src="./images/contact_1.png" alt="">
+              <img class="image__contact_2" src="./images/contact_2.png" alt="">
+              <img class="image__contact_3" src="./images/contact_3.png" alt="">
+            </div>
+            <div class="contact__between">
+              <div class="contact__body">
+                <div class="contact__tile">
+                  <p>Renovate your home AT</p>
+                  <h3>78 Trung Kinh, Yen Hoa, Cau Giay, Hanoi</h3>
+                </div>
+                <div class="contact__btn">
+                  <button>@ORANGY</button>
+                </div>
+              </div>
+            </div>
+            <div class="contact__right">
+              <img class="image__contact_4" src="./images/contact_4.png" alt="">
+              <img class="image__contact_5" src="./images/contact_5.png" alt="">
+            </div>
+          </div>
+
+          <footer>
+            <div class="footer">
+              <h2>Subscribe to get 10% OFF</h2>
+              <p>Subscribe for store updates and discounts.</p>
+              <div class="footer__input">
+                <input type="text" placeholder="Email">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-vimeo"></i>
+              </div>
+              <p>© 2024 Orangy</p>
+            </div>
+          </footer>
   </body>
   <script src="./js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </html>
