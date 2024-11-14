@@ -57,6 +57,11 @@
 }
 
 @media (max-width: 391px) {
+  .inspiration__full {
+    width: 390px;
+    overflow: scroll; /* Hiện thanh cuộn cả ngang và dọc */
+  }
+
   .inspiration__title {
     width: 312px;
     height: 116px;
