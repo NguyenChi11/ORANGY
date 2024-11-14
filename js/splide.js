@@ -1,3 +1,4 @@
+import products from "./data.js";
 //phần splide
 function createSplideProduct(product) {
   return `

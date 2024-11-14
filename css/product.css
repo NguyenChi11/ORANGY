@@ -7,6 +7,10 @@
   margin: 20px -88px;
 }
 
+.none {
+  display: none;
+}
+
 .product__menu-left h1 {
   font-size: 36px;
   font-family: "Lora";
@@ -49,13 +53,30 @@
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.productions__gird {
+.productions__gird__first {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.productions__gird__last {
   grid-column-start: 3;
   grid-column-end: 5;
 }
 
 .productions {
   position: relative;
+}
+
+.product__price__all {
+  display: flex;
+  gap: 10px;
+}
+
+.product__price__new {
+  color: red;
+}
+
+.product__price__old {
+  text-decoration: line-through;
 }
 
 .voucher {
@@ -73,11 +94,9 @@
 .voucher__new {
   background: green;
   padding: 4px;
-  display: inline;
 }
 .product__voucher {
   background: red;
-  display: inline;
   padding: 8px;
 }
 
@@ -138,7 +157,11 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .productions__gird {
+  .productions__gird__first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .productions__gird__last {
     grid-column-start: 1;
     grid-column-end: 3;
   }
