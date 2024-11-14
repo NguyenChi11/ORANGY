@@ -160,21 +160,29 @@ splideProduct.innerHTML = products.map(createSplideProduct).join("");
 // });
 
 //slide
+// const mediaQuery = window.innerWidth;
+// var splide = new Splide(".splide", {
+//   perPage: 4,
+//   rewind: true,
+//   gap: 10,
+// });
+
+width = window.innerWidth;
+
 var splide = new Splide(".splide", {
   perPage: 4,
   rewind: true,
   gap: 10,
 });
 
-var splide1 = new Splide(".splide", {
+var splide_1 = new Splide(".splide", {
   perPage: 1.5,
   rewind: true,
   gap: 10,
 });
 
-const mediaQuery = window.innerWidth;
-if (matchMedia < 738) {
-  splide1.mount();
+if (width < 739) {
+  splide_1.mount();
 } else {
   splide.mount();
 }
